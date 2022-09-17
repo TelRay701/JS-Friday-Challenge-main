@@ -8,24 +8,22 @@
     <title>Cookie Clicker</title>
   </head>
   <body>
-    <header>
+    <div class="top-area">
       <h1>Cookie Clicker</h1>
       <p>This is my copy of the cookie clicker game.</p>
-    </header>
 
-    <div>
       <p id="person"></p>
       <a href="#" onclick="add(1)"
-        ><img src="images/cookie.png" alt="Cookie"
+        ><img class="cookie-pic" src="images/cookie.png" alt="Cookie"
       /></a>
       <h2>Cookies Made: <span id="score">0</span></h2>
     </div>
-    <div>
+    <div class="bottom-area">
       <p>20 cookies = 1 Upgrade Auto-Clicker</p>
-      <button onclick="buyCookies()">UPGRADE</button>
+      <button class="auto" onclick="buyCookies()">UPGRADE</button>
 
       <p>100 cookies = Grandma Upgrade</p>
-      <button onclick="buyGma()">Grandma</button>
+      <button class="granny" onclick="buyGma()">Grandma</button>
     </div>
 
     <script src="index.js"></script>
